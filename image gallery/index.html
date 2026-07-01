@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Responsive Image Gallery</h1>
+
+    <div class="controls">
+
+        <label for="upload" class="upload-btn">
+            + Add Images
+        </label>
+
+        <input type="file" id="upload" multiple accept="image/*">
+
+    </div>
+
+    <div class="gallery" id="gallery">
+
+        <div class="image-container">
+            <img src="images/image1.jpg">
+            <button class="delete-btn">Delete</button>
+        </div>
+
+        <div class="image-container">
+            <img src="images/image2.jpg">
+            <button class="delete-btn">Delete</button>
+        </div>
+
+        <div class="image-container">
+            <img src="images/image3.jpg">
+            <button class="delete-btn">Delete</button>
+        </div>
+
+        <div class="image-container">
+            <img src="images/image4.jpg">
+            <button class="delete-btn">Delete</button>
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+
+    <div class="lightbox" id="lightbox">
+
+        <span class="close">&times;</span>
+
+        <span class="prev">&#10094;</span>
+
+        <img id="lightbox-img">
+
+        <span class="next">&#10095;</span>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
